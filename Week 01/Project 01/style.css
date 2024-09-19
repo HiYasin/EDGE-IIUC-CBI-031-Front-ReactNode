@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: rgba(246, 185, 100, 0.315);
+    padding: 30px 80px;
+    position: relative;
+}
+
+/* Navigation Bar */
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.menu-list{
+    display: flex;
+    gap: 10px;
+    color: black;
+    list-style: none;
+}
+
+
+.title-custom-color{
+    color: rgb(255, 81, 0);
+}
+
+.btn{
+    padding: 15px 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-primary{
+    background: rgb(255, 81, 0);
+    border-radius: 5px;
+    color: #fff;
+    border: rgb(255, 81, 0);
+    cursor: pointer;
+}
+
+.btn-secondary{
+    color: rgb(255, 81, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 81, 0);
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(255, 81, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 81, 0);
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Hero Section */
+
+.hero-title h1{
+    margin: 20px 0px;
+}
+
+.hero-buttons{
+    margin-top: 20px;
+}
+
+.custom-orientation{
+    color: gray;
+    letter-spacing: 20px;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+}

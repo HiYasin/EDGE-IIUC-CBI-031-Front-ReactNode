@@ -4,9 +4,11 @@
 }
 
 header{
-    background: rgba(246, 185, 100, 0.315);
-    padding: 30px 80px;
+    background-color: rgba(255, 149, 0, 0.207);
+   
+    
     position: relative;
+    
 }
 
 /* Navigation Bar */
@@ -60,7 +62,18 @@ header{
 }
 
 /* Hero Section */
+.container{
+    padding: 30px 80px;
+    /* display: flex; */
+    background: url(assets/heroImage.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    height: 350px;
+}
 
+.hero-text{
+    width: 60%;
+}
 .hero-title h1{
     margin: 20px 0px;
 }
@@ -79,4 +92,51 @@ header{
     top: 5px;
     left: 5px;
 
+}
+
+
+/* card section */
+.about{
+    background: rgb(228, 228, 228); 
+    padding: 30px 80px;
+}
+
+.wrapper{
+    background-color: rgba(255, 149, 0, 0.207);
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.card-container{
+    padding: 30px 80px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background: rgb(228, 228, 228);
+}
+
+
+.card{
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.342) ;
+}
+.card img{
+    width: 50px;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+}
+.video{
+    border-radius: 10px;
+    margin: 30px;
 }

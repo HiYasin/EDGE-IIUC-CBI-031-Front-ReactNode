@@ -204,3 +204,46 @@ main{
     margin: 50px auto;
     display: block;
 }
+
+footer{
+    background: var(--bg-secondary);
+    padding: 100px 0px;
+}
+.footer-container{
+    max-width: 1040px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+}
+
+.footer-container p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark2);
+}
+
+.socials{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-form input{
+    width: 100%;
+    border: none;
+    padding: 18px 35px;
+}
+.footer-form div{
+    width: 100%;
+    margin: 12px 0px;
+}
+
+.footer-form input[type="submit"]{
+    font-size: 16px;
+    width: 40%;
+    font-weight: bold;
+    background-color: #FD6E0A;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

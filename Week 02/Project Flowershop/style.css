@@ -272,6 +272,49 @@
     border: 2px dashed gray;
 }
 
+.subscribe{
+    margin: 50px auto;
+}
+/* Subscribe Style */
+.subscribe-wrapper{
+    padding: 10rem;
+    border-radius: 8px;
+    background-image: url('images/Rectangle 9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.subscribe-text{
+    text-align: center;
+}
+
+.subscribe-text p{
+    margin: 24px 0px;
+}
+
+.email-box{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-box input{
+    border: none;
+    border-radius: 8px;
+    padding: 20px 43px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    outline: none;
+}
+
+@media (width >= 576px){
+    .email-box{
+        flex-direction: row;
+    }
+}
 
 
 /* Footer Style */

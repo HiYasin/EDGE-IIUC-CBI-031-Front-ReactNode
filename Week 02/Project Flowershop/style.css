@@ -245,6 +245,35 @@
         text-align: left;
     }
 }
+
+/* Instagram style */
+.instagram-wrapper{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.instagram-title-container{
+    width: min(90%, 40rem);
+    margin: 0 auto;
+    text-wrap: balance;
+}
+.instagram-title-container p{
+    margin: 24px auto;
+}
+.instagram-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center
+}
+.insta-card{
+    max-width: 300px;
+    overflow: hidden;
+    border: 2px dashed gray;
+}
+
+
+
 /* Footer Style */
 footer{
     background: var(--bg-black);

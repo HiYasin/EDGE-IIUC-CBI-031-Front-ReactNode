@@ -157,6 +157,8 @@
 .card-img2{
     background: rgba(5, 151, 160, 0.15);
     align-items: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
 }
 .card-img3{
     background: rgba(71, 125, 17, 0.15);
@@ -167,7 +169,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: auto;
     margin-bottom: 0;
   }
 
@@ -186,11 +187,14 @@
     background: rgba(39, 39, 39, 0.05);
     border-radius: 8px;
     padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 .feature-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, 375px);
     justify-content: center;
+    gap: 100px;
 }
 .feature-card{
     display: flex;
@@ -203,4 +207,36 @@
     font-size: clamp(1rem, 0.8261rem + 0.8696vw, 1.5rem);;
     font-weight: 600;
     color: rgba(39, 39, 39, 0.8)
+}
+@media (width >= 768px){
+    .feature-wrapper{
+        gap: 25px
+    }
+}
+
+/* Footer Style */
+footer{
+    background: var(--bg-black);
+    padding: 100px 0px;
+    color: #fff;
+}
+.footer-wrapper{
+    width: min(80%, 30rem);
+    margin-inline: auto;
+    text-align: center;
+}
+footer h1{
+    font-weight: 800;
+    font-size: clamp(2rem, 1.6522rem + 1.7391vw, 3rem);
+}
+footer h1 span{
+    color: var(--color-primary);
+}
+.footer-description{
+    margin: 24px 0px;
+}
+.copyright{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4)
 }

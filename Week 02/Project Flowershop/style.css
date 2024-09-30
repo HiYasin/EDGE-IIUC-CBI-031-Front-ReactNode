@@ -214,6 +214,37 @@
     }
 }
 
+/* Hot deal styles */
+
+.hot-deal{
+    background: var(--bg-pink);
+}
+.hot-deal-wrapper{
+    width: min(80%, 60rem);
+    margin: 0 auto;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hot-deal-description span{
+    color: var(--color-primary);
+}
+
+.hot-deal-description p{
+    margin: 24px 0px;
+}
+
+@media (width >= 768px){
+    .hot-deal-wrapper{
+        flex-direction: row;
+        text-align: left;
+    }
+}
 /* Footer Style */
 footer{
     background: var(--bg-black);

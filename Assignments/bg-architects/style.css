@@ -212,7 +212,8 @@ nav ul li a:hover::after {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    padding: 60px 0px;
+    padding-top: 50px;
+    padding-bottom: 25px ;
 }
 
 .feature-img {
@@ -348,4 +349,76 @@ nav ul li a:hover::after {
     .year-card{
         left: 50%;
     }
+}
+
+/* Facts style */
+
+.facts{
+    padding: 50px 0;
+}
+
+.facts-title{
+    width: 70%;
+}
+
+.facts-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.facts-card{
+    padding: 40px;
+    border: 1px solid var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.facts-card:hover{
+    background: var(--bg-primary);
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+/* Sponsors Style */
+.sponsors-title{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.sponsors-title p{
+    margin: 16px auto;
+}
+
+.sponsors-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px 0;
+}
+.sponsors-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+}
+.sponsors-card:hover{
+    cursor: pointer;
+    filter: grayscale(0);
+}
+
+/* footer style */
+.footer{
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--bg-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 50px auto;
 }

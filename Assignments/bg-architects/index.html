@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
     <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,16 +21,58 @@
       rel="stylesheet"
     />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        
+      <section class="navigation">
+        <section class="navigation-menu container">
+            <div class="logo">
+              <h1 class="title-normal">G3 Archictects</h1>
+            </div>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn-open">
+              <!-- <i class="fa-solid fa-bars"></i> -->
+              <p>Open</p>
+            </label>
+            <label for="check" class="checkbtn-close">
+              <!-- <i class="fa-solid fa-xmark"></i> -->
+              <p>Close</p>
+            </label>
+            <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </nav>
+          </section>
+      </section>
+      <section class="hero container">
+        <div class="hero-text">
+            <h1 class="title-large">Brand New</h1>
+            <h1 class="title-large">Group of Architects</h1>
+            <p class="text-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+            <button class="btn-primary">Explore More</button>
+        </div>
+        <div class="hero-img">
+            <img src="assets/banner.png" alt="Project Site">
+        </div>
+      </section>
     </header>
     <main>
 
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+    <script>
+      
+      window.addEventListener("resize", () => {
+        const screenWidth = window.innerWidth;
+        // console.log("Current screen width:", screenWidth);
+        if(screenWidth >= 768){
+            document.getElementById("check").checked = false;
+        }
+      });
+    </script>
+  </body>
 </html>
